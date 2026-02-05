@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo-sobre {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(139, 22, 22);
+    font-family: "Cabin", sans-serif;
+    font-weight: 500;
+}
+
+main {
+    background: linear-gradient(
+        to bottom,
+        #fff4e6,
+        #af9164
+    );
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color: #f7e0c1;;
+    color:rgb(117, 47, 47);
+}
+
+.ifood {
+    text-align: center;
+    color: rgb(209, 26, 26);
+}
+
+main p {
+    font-size: 19px;
+}
+
+.Status {
+    padding: 35px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(255, 0, 0);
+}
+
+.sobre {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    display: inline-block;
+    padding: 10px 16px;
+
+
+    color: #140e06;
+    background-color: rgb(173, 212, 137);
+    cursor: pointer;
+    border-radius: 10px;
+
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.cardapio li {
+    padding: 15px;
+    color: black;
+    background-color: #bea877;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px;
+}
+
+
+.cardapio li strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.cardapio li span {
+    color: #000000;
+}
+
+.cardapio li:hover {
+    background-color: #ffe0b2;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+summary {
+    font-size: 21.1px;
+    cursor: pointer
+}
+
+h2 {
+    text-align: left;
+}
+
+.horario li {
+    padding: 15px;
+    color: black;
+    background-color: #bea877;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px;
+}
+.horario li strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 3px;
+}
+
+.horario li span {
+    color: #000000;
+}
+
+.horario li:hover {
+    background-color: #a0e0fc;
+    transform: scale(1.02);
+    transition: 0.3s;
+
+}
+
+.localizacao {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.localizacao h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.localizacao p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 8px rgba(0,0,0,0.2)
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+fieldset {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 2rem;
+
+}
+
+legend {
+    color: #331;
+    padding: 0 0.5rem; 
+    font-size: 20px;
+}
+
+.pedido li {
+    font-size: 20px;
+}
+
+.header {
+    position: relative;
+
+    background-image:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("https://img.freepik.com/vetores-gratis/desenho-wallpaper-hamburger_1076-38.jpg?semt=ais_hybrid&w=740");
+
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+
+    color: rgb(209, 97, 97);
+    text-align: center;
+
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header p strong {
+    font-size: 20px;
+}
+
+
+
+.conteudo-lado-a-lado {
+    display:flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.conteudo-lado-a-lado section {
+    flex: 1;
+}
+
+section {
+    background: rgb(212, 199, 138);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+
+.cardapio,
+.horario {
+    list-style: none;   
+    padding-left: 0;
+}
+
+
+@media (max-width: 768px) {
+    .conteudo-lado-a-lado {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 220px;
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardapio {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        max-width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+}
+
+.maps {
+    text-align: left;
+}
+
+.titulo-sobre {
+    text-align: left;
+    color: #bda87b;
+}
+
