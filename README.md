@@ -1,4 +1,4 @@
-https://naldosilva0.github.io/Andra-Lanches/
+https://naldosilva0.github.io/Lanchonete-Andra-Lanches/
 
 
 # Andra Lanches
